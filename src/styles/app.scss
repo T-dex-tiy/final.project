@@ -1,0 +1,134 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: helvetica;
+}
+.header-nav-bar {
+  display: flex-inline;
+  flex-wrap:wrap;
+  background-color:black;
+  display:flex;
+  align-items:stretch;
+  width:100%;
+  height:10rem;
+  padding: 0;
+  margin:0;
+
+  .logo{
+    flex-direction: flex-start;
+    width:3em;
+    height:3em;
+  }
+  .topHeadBar{
+    display: flex;
+    align-items:stretch;
+    flex-direction: row;
+    flex:4 100%;
+    width:100%;
+    height:2rem;
+    background-color:slategrey;
+    justify-content: center;
+  }
+  .searchBar{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .checkout{
+    display: flex;
+    flex:0;
+    align-items: stretch;
+    justify-content: flex-end;
+    color:red;
+    width:50px;
+    border:1px solid red;
+
+    &:hover{
+      color:grey;
+      cursor: pointer;
+    }
+  }
+  .list-items{
+    display: flex;
+    color:black;
+    border:1.5px solid white;
+    width:100%;
+    align-self: flex-end;;
+
+
+    .button{
+      flex:2;
+      border: 1.5px solid black;
+      border-radius: 3px;
+      flex-flow:nowrap row;
+      width:100%;
+      height:3rem;
+      background-color: slategrey;
+      text-align: center;
+      padding-bottom:.1rem;
+      font-size: 1.15rem;
+      font-weight: bolder;
+      cursor: pointer;
+
+      &:hover{
+        background-color: black;
+        color:white;
+      }
+
+    }
+
+  }
+}
+
+.app-wrapper{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:stretch;
+  height:100%;
+  min-height:1000px;
+  .app-left{
+    width:20%;
+    border: 1px solid black;
+  }
+  .item-landing-page{
+    flex:1;
+    flex-direction: column;
+    .Product-Details{
+      justify-content: flex-end;
+
+    }
+
+    .headpic{
+      height:25%;
+      width:100%;
+
+
+    }
+    .shop{
+      z-index: 99;
+      font-family: helvetica;
+      flex-direction: row nowrap;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      color: black;
+    }
+
+
+  }
+}
+.footer-content{
+  display: flex;
+  background-color: black;
+  width:100%;
+  height:7rem;
+  color:white;
+  justify-content: center;
+}
+
+
+.productDisplay{
+  height:40%;
+  width:40%
+}

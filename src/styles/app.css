@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica; }
+
+.header-nav-bar {
+  display: flex-inline;
+  flex-wrap: wrap;
+  background-color: black;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 10rem;
+  padding: 0;
+  margin: 0; }
+  .header-nav-bar .logo {
+    flex-direction: flex-start;
+    width: 3em;
+    height: 3em; }
+  .header-nav-bar .topHeadBar {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex: 4 100%;
+    width: 100%;
+    height: 2rem;
+    background-color: slategrey;
+    justify-content: center; }
+  .header-nav-bar .searchBar {
+    display: flex;
+    align-items: stretch;
+    justify-content: center; }
+  .header-nav-bar .checkout {
+    display: flex;
+    flex: 0;
+    align-items: stretch;
+    justify-content: flex-end;
+    color: red;
+    width: 50px;
+    border: 1px solid red; }
+    .header-nav-bar .checkout:hover {
+      color: grey;
+      cursor: pointer; }
+  .header-nav-bar .list-items {
+    display: flex;
+    color: black;
+    border: 1.5px solid white;
+    width: 100%;
+    align-self: flex-end; }
+    .header-nav-bar .list-items .button {
+      flex: 2;
+      border: 1.5px solid black;
+      border-radius: 3px;
+      flex-flow: nowrap row;
+      width: 100%;
+      height: 3rem;
+      background-color: slategrey;
+      text-align: center;
+      padding-bottom: .1rem;
+      font-size: 1.15rem;
+      font-weight: bolder;
+      cursor: pointer; }
+      .header-nav-bar .list-items .button:hover {
+        background-color: black;
+        color: white; }
+
+.app-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+  min-height: 1000px; }
+  .app-wrapper .app-left {
+    width: 20%;
+    border: 1px solid black; }
+  .app-wrapper .item-landing-page {
+    flex: 1;
+    flex-direction: column; }
+    .app-wrapper .item-landing-page .Product-Details {
+      justify-content: flex-end; }
+    .app-wrapper .item-landing-page .headpic {
+      height: 25%;
+      width: 100%; }
+    .app-wrapper .item-landing-page .shop {
+      z-index: 99;
+      font-family: helvetica;
+      flex-direction: row nowrap;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      color: black; }
+
+.footer-content {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 7rem;
+  color: white;
+  justify-content: center; }
+
+.productDisplay {
+  height: 40%;
+  width: 40%; }
+
+/*# sourceMappingURL=app.css.map */
